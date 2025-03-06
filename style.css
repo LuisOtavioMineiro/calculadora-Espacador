@@ -6,10 +6,10 @@ body {
 }
 
 .container {
-    width: 90%; /* Reduzindo um pouco para telas menores */
-    max-width: 500px; /* Diminuindo o limite máximo */
+    width: 90%; 
+    max-width: 500px; 
     margin: 0 auto;
-    padding: 20px; /* Menos padding para compactar */
+    padding: 20px;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -18,7 +18,7 @@ body {
 h1 {
     text-align: center;
     color: #333;
-    font-size: 22px; /* Menor para telas pequenas */
+    font-size: 22px; 
 }
 
 form {
@@ -27,9 +27,9 @@ form {
 }
 
 label {
-    margin-top: 12px; /* Menos espaço */
+    margin-top: 12px; 
     font-weight: bold;
-    font-size: 14px; /* Texto menor */
+    font-size: 14px;
 }
 
 input {
@@ -42,8 +42,8 @@ input {
 
 button {
     margin-top: 20px;
-    padding: 12px; /* Menos padding para botões menores */
-    font-size: 16px; /* Texto menor */
+    padding: 12px; 
+    font-size: 16px; 
     background-color: #4caf50;
     color: white;
     border: none;
@@ -57,26 +57,26 @@ button:hover {
 
 #result {
     margin-top: 20px;
-    font-size: 2rem; /* Diminuindo um pouco */
+    font-size: 2rem; 
     color: #333;
 }
 
 .vol {
-    font-size: 3.5rem; /* Menos espaçamento */
+    font-size: 3.5rem; 
     font-weight: bold;
 }
 
 .volt {
-    font-size: 22px; /* Reduzindo um pouco */
+    font-size: 22px; 
     position: relative;
     margin-top: -20px;
 }
 
-/* Ajustes para telas menores, incluindo o Galaxy S23 */
+/* Ajustes para telas menores*/
 @media (max-width: 1080px) {
     .container {
         max-width: 450px;
-        padding: 15px; /* Reduzindo ainda mais */
+        padding: 15px; 
     }
 
     h1 {
