@@ -59,3 +59,8 @@ button:hover {
     position: relative;
     margin-top: -30px;
 }
+@media (max-width: 1080px) {
+    .container {
+        font-size: 18px;
+    }
+}
