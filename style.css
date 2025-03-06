@@ -4,63 +4,108 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .container {
-    width: 100%;
-    max-width: 600px;
+    width: 90%; /* Reduzindo um pouco para telas menores */
+    max-width: 500px; /* Diminuindo o limite máximo */
     margin: 0 auto;
-    padding: 25px;
+    padding: 20px; /* Menos padding para compactar */
     background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
+
 h1 {
     text-align: center;
     color: #333;
+    font-size: 22px; /* Menor para telas pequenas */
 }
+
 form {
     display: flex;
     flex-direction: column;
 }
+
 label {
-    margin-top: 15px;
+    margin-top: 12px; /* Menos espaço */
     font-weight: bold;
+    font-size: 14px; /* Texto menor */
 }
+
 input {
-    padding: 7px;
-    margin-top: 6px;
+    padding: 6px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 5px;
+    font-size: 14px;
 }
+
 button {
-    margin-top: 25px;
-    padding: 15px;
+    margin-top: 20px;
+    padding: 12px; /* Menos padding para botões menores */
+    font-size: 16px; /* Texto menor */
     background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #45a049;
 }
+
 #result {
-    margin-top: 25px;
-    font-size: 2.5rem;
+    margin-top: 20px;
+    font-size: 2rem; /* Diminuindo um pouco */
     color: #333;
 }
+
 .vol {
-    font-size: 4rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.5rem; /* Menos espaçamento */
     font-weight: bold;
 }
+
 .volt {
-    font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px; /* Reduzindo um pouco */
     position: relative;
-    margin-top: -30px;
+    margin-top: -20px;
 }
+
+/* Ajustes para telas menores, incluindo o Galaxy S23 */
 @media (max-width: 1080px) {
     .container {
-        font-size: 18px;
+        max-width: 450px;
+        padding: 15px; /* Reduzindo ainda mais */
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 1.8rem;
+    }
+
+    .vol {
+        font-size: 3rem;
+    }
+
+    .volt {
+        font-size: 20px;
+        margin-top: -15px;
     }
 }
