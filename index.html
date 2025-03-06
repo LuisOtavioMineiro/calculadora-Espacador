@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Espaçador para Piso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Espaçador para Piso</h1>
+        <form id="calc-form">
+            <label for="ladox"> Lado X   (cm)</label>
+            <input type="number" id="ladox" required>
+
+            <label for="ladoy">Lado Y (cm)</label>
+            <input type="number" id="ladoy" required>
+
+            <label for="tileWidth">Quantidade de espaçador por piso</label>
+            <input type="number" id="espacador" required>
+
+            <label for="tileLength">Área total (m²)</label>
+            <input type="number" id="areatotal" >
+            
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="result">
+            <p> espaçadores necessários ao total:<span id="spacersCount">0</span></p>
+            <p class="vol">*Este valor e aproximado</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
